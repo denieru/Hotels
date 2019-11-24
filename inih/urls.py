@@ -1,18 +1,11 @@
 from rest_framework import routers
+from .viewsets import inihViewSet, menuViewSet, servhViewSet, archViewSet,habhViewSet
 
-from .viewsets import inihViewSet
 router = routers.SimpleRouter()
-router.register('inih', inihViewSet)
+router.register('Inicio', inihViewSet)
+router.register('Menu', menuViewSet)
+router.register('Servicios', servhViewSet)
+router.register('Archivo', archViewSet)
+router.register('Habitaciones', habhViewSet)
 urlpatterns = router.urls 
 
-
-
-
-
-'''
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('', views.Inicio, name='Inicio'),
-] '''

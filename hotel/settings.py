@@ -9,6 +9,12 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+LANGUAGE_CODE = 'es'
+TIME_ZONE = 'America/Santiago'
+
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
 
 import os
 
